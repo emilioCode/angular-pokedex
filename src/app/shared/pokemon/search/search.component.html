@@ -1,0 +1,11 @@
+
+<div class="d-grid gap-2">
+    <input class="form-control text-center" [(ngModel)]='variable' type="text" placeholder="Ingrese Un Número/Nombre" />
+    <button class="btn btn-danger" type="button" (click)='getPokemon(variable)'>Buscar</button>
+</div>
+<br/>
+<div class="text-center">
+    <h4 style="color: whitesmoke;">{{pokemon.id}}</h4>
+    <img [src]='pokemon.source' style=" width: 30%;"/>
+    <h4 style="color: whitesmoke;">{{pokemon.name}}</h4>
+</div>
