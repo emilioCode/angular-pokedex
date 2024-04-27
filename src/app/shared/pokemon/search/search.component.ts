@@ -9,6 +9,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnDestroy {
+  variable = '';
   pokemon: any = {};
   headers = new HttpHeaders().set("content-type", "application/json");
   url: string = 'https://pokeapi.co/api/v2/pokemon/';
